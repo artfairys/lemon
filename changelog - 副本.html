@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles/log.css">
+</head>
+
+<body>
+    <p>起始页已上线 <span id="txtDays"></span> 天<br>最后更新：2020.10.26</p>
+    2020.10.26<br>
+    <span class="updateTag new">新增</span>添加版权信息👍<br>
+    <span class="updateTag new">新增</span>添加三个默认壁纸以供选择👍<br>
+    <span class="updateTag new">新增</span>添加网站LOGO<br>
+    <span class="updateTag new">新增</span>搜索框添加DuckduckGo，Yandex支持<br>
+    <span class="updateTag new">新增</span>添加Bing每日壁纸支持<br>
+    <span class="updateTag new">新增</span>添加动态壁纸<br>
+    <span class="updateTag imp">改进</span>删除无用代码块<br>
+    <span class="updateTag imp">改进</span>删除无用的登录，便签等代码块<br>
+    <span class="updateTag imp">改进</span>删除无用的网站捷径代码块<br>
+    <span class="updateTag fix">修复</span>修复背景选择页面的问题<br>
+    <span class="updateTag fix">修复</span>修复弹出菜单无法收回的问题<br>
+    <br>
+<div id="changeLog" class="">2022-11-29
+	<br>
+	<span class="updateTag new">新增</span>「捷径收纳夹」功能
+	<br>
+	<span class="updateTag new">新增</span>「为搜索栏应用伸缩动效」设置项（默认开启）
+	<br>
+	<span class="updateTag new">新增</span>「时间字体」设置项；可在粗体（默认）或细体中选择
+	<br>
+	<span class="updateTag imp">改进</span>预设捷径图标拥有全新配色
+	<br>
+	<span class="updateTag imp">改进</span>必应壁纸信息拥有全新格式和外观
+	<br>
+	<span class="updateTag imp">改进</span>「添加网站捷径」对话框的排版
+	<br>
+	<span class="updateTag imp">改进</span>「每日壁纸分辨率」设置项的默认值将依据屏幕分辨率和浏览器性能来自动设定
+	<br>
+	<span class="updateTag imp">改进</span>全局字体的优先级
+	<br>
+	<span class="updateTag imp">改进</span>全局字体的字重由「细」改为「常规」
+	<br>
+	<span class="updateTag imp">改进</span>「时间」的字体外观
+	<br>
+	<span class="updateTag imp">改进</span>部分文本框的外观
+	<br>
+	<span class="updateTag imp">改进</span>网站捷径在手机上的尺寸和间距
+	<br>
+	<span class="updateTag imp">改进</span>搜索栏和其它部分文本框在移动设备触发的屏幕键盘的布局，以改善搜索或键入网址的体验
+	<br>
+	<span class="updateTag imp">改进</span>部分元素背景的毛玻璃效果
+	<br>
+	<span class="updateTag imp">改进</span>为右上角菜单添加了分隔线
+	<br>
+	<span class="updateTag imp">改进</span>为「自定义捷径图标」页面中「青柠生成」选项的「随机」按钮添加了图标
+	<br>
+	<span class="updateTag imp">改进</span>设置自定义搜索引擎的 URL 时，将实时检查格式规范性并突出显示提示
+	<br>
+	<span class="updateTag imp">改进</span>「为网站捷径应用半透明效果」设置项不再随「流畅模式」的关闭而自动开启
+	<br>
+	<span class="updateTag imp">改进</span>「为壁纸应用径向渐变遮罩层」设置项更名为「为壁纸应用暗角滤镜」
+	<br>
+	<span class="updateTag imp">改进</span>所有预设捷径都被删除后，可在「帮助和反馈」页面将其还原
+	<br>
+	<span class="updateTag imp">改进</span>安装青柠起始页扩展后，清除浏览器 Cookie 将不再导致青柠起始页退出登录
+	<br>
+	<span class="updateTag imp">改进</span>升级框架至 Vue 3
+	<br>
+	<span class="updateTag imp">改进</span>不再兼容 Chrome 49 ~ 54 和 Firefox 51 ~ 77
+	<br>
+	<span class="updateTag imp">改进</span>大幅提升青柠起始页加载速度
+	<br>
+	<span class="updateTag imp">改进</span>其它多项细节改进
+	<br>
+	<span class="updateTag fix">修复</span>使用右键菜单向文本中粘贴时，粘贴的内容总是追加在文本末尾的问题
+	<br>
+	<span class="updateTag fix">修复</span>当自定义的搜索 URL 格式不规范且「在新标签页打开搜索结果和网站捷径」设置项关闭时，会直接切换使用百度进行搜索且无任何提示的问题
+	<br>
+	<br>2022-7-23
+	<br>
+	<span class="updateTag imp">改进</span>「主题色」设置项的鼠标悬浮效果
+	<br>
+	<span class="updateTag imp">改进</span>部分设置项的说明文字
+	<br>
+	<br>2022-7-9
+	<br>
+	<span class="updateTag imp">改进</span>在「壁纸偏好」页面可直接下载最高分辨率的每日壁纸原图
+	<br>
+	<br>2022-7-7
+	<br>
+	<span class="updateTag fix">修复</span>在静态壁纸和动态壁纸之间切换时，可能无法正确应用壁纸聚焦样式的问题
+	<br>
+	<br>2022-7-4
+	<br>
+	<span class="updateTag new">新增</span>「每日壁纸分辨率」设置项；现可欣赏高达 8K 清晰度的每日壁纸原图
+	<br>
+	<span class="updateTag imp">改进</span>将视频文件设为自定义动态壁纸时，会自动截取视频画面作为「壁纸偏好」页面中的缩略图
+	<br>
+	<span class="updateTag imp">改进</span>「流畅模式」开启时，也可以将任意视频文件设为自定义动态壁纸
+	<br>
+	<span class="updateTag imp">改进</span>「流畅模式」开启时，更换到动态壁纸时页面不再自动刷新
+	<br>
+	<span class="updateTag fix">修复</span>开启 / 关闭「流畅模式」时，「为遮罩层应用毛玻璃效果」设置项可能无法正确联动的问题
+	<br>
+	<span class="updateTag fix">修复</span>将视频文件设为自定义动态壁纸时，青柠起始页加载时搜索框可能无法正确应用背景聚焦样式的问题
+	<br>
+	<br>2022-6-7
+	<br>
+	<span class="updateTag new">新增</span>现在您可以在「壁纸偏好」页面中将视频文件设为自定义动态壁纸
+	<br>
+	<span class="updateTag new">新增</span>为青柠起始页的 Firefox 扩展铺路
+	<br>
+	<span class="updateTag imp">改进</span>自定义壁纸不再有文件大小限制
+	<br>
+	<span class="updateTag imp">改进</span>重置青柠起始页时，也将同时清理 Cookie 和缓存
+	<br>
+	<br>2022-6-4
+	<br>
+	<span class="updateTag new">新增</span>「在搜索栏按 Tab 键 / Shift + Tab 键时，切换到：」设置项；可设为只在您常用的两个搜索引擎间快捷切换
+	<br>
+	<span class="updateTag imp">改进</span>微调网站捷径、设置开关、下拉选单等元素的样式
+	<br>
+	<span class="updateTag imp">改进</span>微调弹出式菜单的动画
+	<br>
+	<span class="updateTag imp">改进</span>「常规设置」中「搜索和导航」设置组拆分为「搜索」组和「导航」组
+	<br>
+	<br>2022-5-23
+	<br>
+	<span class="updateTag new">新增</span>在搜索栏按 Tab 键即可切换到下一个搜索引擎；按 Shift + Tab 键即可切换到上一个搜索引擎
+	<br>
+	<span class="updateTag imp">改进</span>切换搜索引擎时，搜索栏左侧会显示当前搜索引擎的名称
+	<br>
+	<br>2022-5-21
+	<br>
+	<span class="updateTag fix">修复</span>「天气」组件可能排版混乱的问题
+	<br>
+	<br>2022-5-19
+	<br>
+	<span class="updateTag imp">改进</span>右下角错误信息弹窗的样式
+	<br> 其它细节改进和问题修复
+	<br>
+	<br>2022-5-18
+	<br>
+	<span class="updateTag fix">修复</span>壁纸等图片无法加载的问题
+	<br>
+	<br>2022-5-1
+	<br> 劳动节快乐！
+	<br>
+	<span class="updateTag fix">修复</span>F 搜 搜索引擎失效的问题
+	<br>
+	<span class="updateTag fix">修复</span>使用必应（国际版）作为搜索引擎进行搜索时，可能会跳转到必应首页的问题
+	<br>
+	<br>2022-4-22
+	<br>
+	<span class="updateTag imp">改进</span>重新设计「一言」卡片的外观
+	<br>
+	<span class="updateTag imp">改进</span>为每日壁纸点赞时的响应速度
+	<br>
+	<span class="updateTag imp">改进</span>重写二级页面下方切换页按钮的样式
+	<br>
+	<span class="updateTag imp">改进</span>海外加载速度和访问体验
+	<br>
+	<span class="updateTag imp">改进</span>其它多项细节改进
+	<br>
+	<span class="updateTag fix">修复</span>未设置昵称的用户的账号信息无法在「账号管理」页面中显示的问题
+	<br>
+	<br>2022-4-10
+	<br>
+	<span class="updateTag fix">修复</span>首次聚焦到青柠起始页扩展新标签页时，第一个字符可能无法正常输入到搜索栏的问题
+	<br>
+	<br>2022-3-11
+	<br>
+	<span class="updateTag imp">改进</span>必应壁纸「喜欢」按钮的排版改为垂直居中对齐
+	<br>
+	<span class="updateTag imp">改进</span>重写常规设置中选项失效的逻辑，使交互更加人性化
+	<br>
+	<span class="updateTag fix">修复</span>在文本框拖拽文字时，「拖放来设置为壁纸」提示弹窗也会出现的问题
+	<br>
+	<br>2022-2-28
+	<br>
+	<span class="updateTag imp">改进</span>「起始页加载时自动聚焦到搜索栏」设置项在青柠起始页扩展中默认关闭
+	<br>
+	<span class="updateTag fix">修复</span>「一言」可能在青柠起始页扩展新标签页加载时异常显示的问题
+	<br>
+	<span class="updateTag fix">修复</span>首次聚焦到青柠起始页扩展新标签页时，搜索栏可能会展开再收起的问题
+	<br>
+	<br>2022-2-23
+	<br>
+	<span class="updateTag imp">改进</span>压缩了「壁纸偏好」页面默认壁纸预览图的尺寸，以提升其加载速度
+	<br>
+	<span class="updateTag imp">改进</span>右上角菜单的「浏览器扩展」菜单项现在对所有在 Chrome 浏览器使用青柠起始页网页版的用户可见
+	<br>
+	<span class="updateTag fix">修复</span>在 macOS 使用上/下方向键切换输入法候选词时也会同时切换搜索候选项的问题
+	<br>
+	<br>2022-2-13
+	<br>
+	<span class="updateTag new">新增</span>青柠起始页扩展 crx 文件发布！<a class="links1" target="_blank" href="https://limestart.cn/intro?action=start">点此前往下载</a>
+	<br>
+	<span class="updateTag new">新增</span>青柠起始页扩展新版本提示
+	<br>
+	<span class="updateTag imp">改进</span>多项细节改进
+	<br>
+	<br>2022-2-1
+	<br> 虎年大吉！
+	<br>
+	<span class="updateTag imp">改进</span>更改浏览器兼容性警告的图标
+	<br>
+	<span class="updateTag imp">改进</span>微调为每日壁纸点赞时的按钮动画
+	<br>
+	<br>2022-1-25
+	<br>
+	<span class="updateTag imp">改进</span>细节改进
+	<br>
+	<span class="updateTag fix">修复</span>从便笺页切换回网站捷径页后，按下部分按键可能导致界面元素显示错位的问题
+	<br>
+	<br>2022-1-21
+	<br>
+	<span class="updateTag imp">改进</span>微调弹出式菜单的外观
+	<br>
+	<span class="updateTag fix">修复</span>在固定便笺区域单击鼠标右键以进入二级界面时，一级界面的弹出式菜单可能不会自动关闭的问题
+	<br>
+	<br>2022-1-20
+	<br>
+	<span class="updateTag imp">改进</span>重写固定便笺区域的样式
+	<br>
+	<span class="updateTag imp">改进</span>微调取消固定便笺的动画
+	<br>
+	<span class="updateTag imp">改进</span>所有文本框都已适配基本操作（剪切、复制、粘贴）右键菜单
+	<br>
+	<span class="updateTag fix">修复</span>固定便笺区域无法响应部分鼠标点击操作的问题
+	<br>
+	<span class="updateTag fix">修复</span>固定到主屏幕的长便笺可能超出页面显示范围的问题
+	<br>
+	<span class="updateTag fix">修复</span>搜索引擎菜单可能超出页面显示范围的问题
+	<br>
+	<br>2022-1-17
+	<br>
+	<span class="updateTag imp">改进</span>提升静态壁纸在中国大陆的加载速度
+	<br>
+	<br>2022-1-15
+	<br>
+	<span class="updateTag new">新增</span>重新设计并重写搜索栏
+	<br>
+	<span class="updateTag new">新增</span>全新搜索引擎切换功能：在搜索栏即可直接切换到任意搜索引擎
+	<br>
+	<span class="updateTag new">新增</span>在搜索栏使用 Alt + 0 ~ 9 快捷键即可在前 10 个搜索引擎中快速切换
+	<br>
+	<span class="updateTag new">新增</span>在搜索栏使用 Alt + Enter 快捷键即可触发进阶搜索候选项（翻译 / 访问网址 / 计算算式 / 打开捷径）
+	<br>
+	<span class="updateTag imp">改进</span>重写「添加网站捷径」对话框的样式
+	<br>
+	<span class="updateTag imp">改进</span>精简冗余代码
+	<br>
+	<span class="updateTag imp">改进</span>其它多项细节改进
+	<br>
+	<span class="updateTag fix">修复</span>「起始页加载时自动聚焦到搜索栏」设置项关闭后，「一言」可能仍然在起始页加载时显示的问题
+	<br>
+	<span class="updateTag fix">修复</span>「起始页加载时自动显示二级界面」设置项开启后，壁纸可能会在起始页加载时异常缩放的问题
+	<br>
+	<br>2022-1-3
+	<br>
+	<span class="updateTag new">新增</span>1 个预设搜索引擎：F 搜
+	<br>
+	<span class="updateTag imp">改进</span>多项细节改进
+	<br>
+	<br>2022-1-1
+	<br> 新年快乐！
+	<br>
+	<span class="updateTag imp">改进</span>填写昵称和生日信息的页面新增「以后再说」选项
+	<br>
+	<span class="updateTag imp">改进</span>其它细节改进
+	<br>
+	<span class="updateTag fix">修复</span>填写昵称和生日信息的页面可能反复弹出的问题
+	<br>
+	<br>2021-12-21
+	<br>
+	<span class="updateTag new">新增</span>2021 冬季限定动画效果上线（可在「常规设置 &gt; 视效和性能」中关闭）
+	<br>
+	<span class="updateTag new">新增</span>2 张冬季主题动态壁纸：Snow Evening &amp; We Wish You a Merry Christmas
+	<br>
+	<span class="updateTag new">新增</span>「一言」现在可以直接复制 / 搜索 / 收藏到便笺
+	<br>
+	<span class="updateTag new">新增</span>青柠起始页浏览器扩展开始公测！安装地址：<a class="links1" target="_blank" href="https://chrome.google.com/webstore/detail/aajmeahnoefldipnjgodkobfdcpmapno">Chrome 版扩展</a> / <a class="links1" target="_blank" href="https://microsoftedge.microsoft.com/addons/detail/pcpnigdkpcgemocnjhebmajldpjlbeom">Edge 版扩展</a>
+	<br>
+	<span class="updateTag new">新增</span>青柠起始页介绍页面上线！<a class="links1" target="_blank" href="https://limestart.cn/intro">点此前往</a>
+	<br>
+	<span class="updateTag imp">改进</span>优化脚本加载机制和关键代码执行逻辑，大幅提升青柠起始页加载速度
+	<br>
+	<span class="updateTag imp">改进</span>「背景图像偏好」更名为「壁纸偏好」
+	<br>
+	<span class="updateTag imp">改进</span>重写「壁纸偏好」页面架构和壁纸更换逻辑，提高性能和兼容性
+	<br>
+	<span class="updateTag imp">改进</span>菜单样式细节改进
+	<br>
+	<span class="updateTag imp">改进</span>其它多项细节改进
+	<br>
+	<span class="updateTag fix">修复</span>拖放非图片文件到页面上时也会将其设为壁纸，导致背景黑屏且无法使用浏览器来打开该文件的问题
+	<br>
+	<span class="updateTag fix">修复</span>动态壁纸在页面加载时可能会闪烁一次的问题
+	<br>
+	<span class="updateTag fix">修复</span>由必应壁纸更换到其它壁纸后，必应壁纸的「喜欢」按钮仍然显示（且反之亦然）的问题
+	<br>
+	<span class="updateTag fix">修复</span>连接到国外后端服务器时，青柠起始页可能无法响应用户操作的问题
+	<br>
+	<br>2021-11-21
+	<br>
+	<span class="updateTag imp">改进</span>细节改进
+	<br>
+	<br>2021-11-18
+	<br>
+	<span class="updateTag imp">改进</span>全局对话框支持使用「Enter」和「Esc」快捷键进行确定 / 取消的操作
+	<br>
+	<span class="updateTag imp">改进</span>重新设计便笺工具栏，扩大「便笺」功能显示区域
+	<br>
+	<span class="updateTag imp">改进</span>便笺创建时间显示为相对时间，例如「今天 / 昨天 / 前天 17:35」
+	<br>
+	<span class="updateTag imp">改进</span>便笺列表排序方式变更为创建时间倒序，即最近创建的便笺排在最上面
+	<br>
+	<span class="updateTag imp">改进</span>便笺列表的样式
+	<br>
+	<span class="updateTag imp">改进</span>其它细节改进
+	<br>
+	<br>2021-11-11
+	<br>
+	<span class="updateTag new">新增</span>1 个预设搜索引擎：Yandex
+	<br>
+	<span class="updateTag imp">改进</span>在「关于」页面向下滚动更新日志时自动展开显示的判定机制
+	<br>
+	<span class="updateTag imp">改进</span>青柠起始页扩展新标签页不再显示页脚的网站备案信息
+	<br>
+	<span class="updateTag dep"></span>多吉搜索、秘迹搜索、LooKao 搜索引擎疑似停止运营，因而从「搜索引擎偏好」列表中移除。向他们致敬。
+	<br>
+	<br>2021-10-29
+	<br>
+	<span class="updateTag fix">修复</span>「捐助我」和「反馈」页面的标题在中文语言下显示为「undefined」的问题
+	<br>
+	<br>2021-10-26
+	<br>
+	<span class="updateTag imp">改进</span>多项细节改进
+	<br>
+	<br>2021-10-18
+	<br>
+	<span class="updateTag new">新增</span>全新设计的全局对话框
+	<br>
+	<span class="updateTag imp">改进</span>网站捷径右键菜单的「删除」菜单项现在突出显示为红色
+	<br>
+	<span class="updateTag fix">修复</span>新注册用户首次填写昵称和生日信息后，问候语显示为「null」且账号管理页面的部分信息显示为缺省值的问题
+	<br>
+	<br>2021-10-16
+	<br>
+	<span class="updateTag imp">改进</span>当「便笺」有未保存的内容改动时，窗口标题后会显示星号（*）
+	<br>
+	<br>2021-9-22
+	<br>
+	<span class="updateTag imp">改进</span>微调必应壁纸信息的格式
+	<br>
+	<span class="updateTag fix">修复</span>部分界面排版异常的问题
+	<br>
+	<br>2021-8-23
+	<br>
+	<span class="updateTag new">新增</span>搜索栏支持直接进行四则混合运算
+	<br>
+	<span class="updateTag imp">改进</span>为进阶搜索候选项添加了图标
+	<br>
+	<span class="updateTag imp">改进</span>点击搜索历史记录中的某一项后，该项会移至历史记录第一位
+	<br>
+	<span class="updateTag imp">改进</span>搜索历史记录不再重复记录相同的搜索内容
+	<br>
+	<span class="updateTag imp">改进</span>其它细节改进
+	<br>
+	<br>2021-8-20
+	<br>
+	<span class="updateTag new">新增</span>搜索栏支持直接搜索并打开任意自定义网站捷径
+	<br>
+	<span class="updateTag imp">改进</span>搜索栏收起时，按下回车、空格等键也可直接激活搜索栏
+	<br>
+	<span class="updateTag imp">改进</span>其它细节改进
+	<br>
+	<span class="updateTag fix">修复</span>在触屏设备上点击保存或删除便笺时可能误触返回网站捷径页的问题
+	<br>
+	<br>2021-8-15
+	<br>
+	<span class="updateTag fix">修复</span>「减弱动态效果」开启时，窗口弹出动画缺失部分过渡效果的问题
+	<br>
+	<span class="updateTag fix">修复</span>窗口在 Firefox 上弹出时布局可能闪烁的问题
+	<br>
+	<span class="updateTag fix">修复</span>页脚信息在 Firefox 上可能显示错位的问题
+	<br>
+	<span class="updateTag fix">修复</span>更新欢迎页在手机上的布局可能显示错位的问题
+	<br>
+	<br>2021-8-9
+	<br>
+	<span class="updateTag fix">修复</span>「天气」功能导致页面加载时可能闪烁、卡顿的问题
+	<br>
+	<br>2021-8-8
+	<br> <a class="links1" target="_blank" href="https://weibo.com/limestart">@青柠起始页</a> 微博上线啦！关注即可随时了解青柠最新开发动态~
+	<br>
+	<br>2021-8-7
+	<br>
+	<span class="updateTag new">新增</span>重写全新「天气」功能
+	<br>
+	<span class="updateTag imp">改进</span>「天气」数据实时更新，无需刷新即可查看最新天气
+	<br>
+	<span class="updateTag imp">改进</span>在「常规设置」中开启「天气」时，无需刷新即可生效
+	<br>
+	<span class="updateTag imp">改进</span>「天气」功能支持手动更改定位，区县级精度；暂无法保存更改
+	<br>
+	<span class="updateTag imp">改进</span>点击「清除历史记录」时，搜索框不会失去焦点
+	<br>
+	<span class="updateTag imp">改进</span>网站捷径的标题现在在手机上可以显示更多字数
+	<br>
+	<span class="updateTag fix">修复</span>「天气」功能无法加载显示的问题
+	<br>
+	<span class="updateTag fix">修复</span>拖动网站捷径时，「拖放来设置为壁纸」提示弹窗也会出现的问题
+	<br>
+	<span class="updateTag fix">修复</span>在触屏设备上登录账号后，「您尚未登录」提示弹窗可能不会自动消失的问题
+	<br>
+	<span class="updateTag fix">修复</span>「您尚未登录」提示弹窗在手机上可能超出屏幕显示的问题
+	<br>
+	<br>2021-7-31
+	<br>
+	<span class="updateTag new">新增</span>重新设计了所有窗口的外观，提升内容显示面积、风格更加利落
+	<br>
+	<span class="updateTag new">新增</span>「账号管理」页面支持直接复制邮箱及UID信息
+	<br>
+	<span class="updateTag imp">改进</span>移动端外观适配；优化多处界面在手机上的显示效果
+	<br>
+	<span class="updateTag imp">改进</span>弹出式菜单的外观
+	<br>
+	<span class="updateTag imp">改进</span>第三次严格「一言」API 的句库分类以减少低质量句子
+	<br>
+	<span class="updateTag imp">改进</span>将部分弹窗改为动态创建
+	<br>
+	<span class="updateTag imp">改进</span>精简了冗余的样式代码
+	<br>
+	<span class="updateTag fix">修复</span>「自动启用深色主题的时段」设置项的下拉选单弹出时可能会超出可视区域的问题
+	<br>
+	<span class="updateTag fix">修复</span>更新完成提示在手机上可能显示错位的问题
+	<br>
+	<span class="updateTag fix">修复</span>用户注册后首次填写昵称和生日信息的页面上的「完成」按钮可能无法点击的问题
+	<br>
+	<br>2021-7-23
+	<br>
+	<span class="updateTag new">新增</span>在搜索栏输入自定义网站捷径的标题即可通过候选栏直接打开该捷径
+	<br>
+	<span class="updateTag imp">改进</span>搜索栏网址判定
+	<br>
+	<span class="updateTag imp">改进</span>「拖放图片文件到页面上来设置为壁纸」提示弹窗的窗口边缘检测
+	<br>
+	<br>2021-7-17
+	<br>
+	<span class="updateTag imp">改进</span>「拖放图片文件到页面上来设置为壁纸」功能的交互反馈
+	<br>
+	<br>2021-7-5
+	<br>
+	<span class="updateTag imp">改进</span>如需通过搜索栏直接访问某网址，请点击搜索候选栏第一项「访问：...」
+	<br>
+	<span class="updateTag fix">修复</span>在搜索栏输入某些内容可能被误判为不带协议的网址的问题
+	<br>
+	<br>2021-6-30
+	<br>
+	<span class="updateTag imp">改进</span>细节改进
+	<br>
+	<br>2021-6-27
+	<br>
+	<span class="updateTag new">新增</span>在搜索栏输入不带协议的网址也可以直接访问
+	<br>
+	<span class="updateTag new">新增</span>为多语言铺路
+	<br>
+	<span class="updateTag fix">修复</span>必应壁纸点赞数不会清零的问题
+	<br>
+	<span class="updateTag fix">修复</span>更新完成提示中的链接无法点击的问题
+	<br>
+	<br>2021-6-1
+	<br>
+	<span class="updateTag fix">修复</span>在二级界面按 Tab 键切换焦点可能导致界面元素显示错位的问题
+	<br>
+	<br>2021-5-20
+	<br>
+	<span class="updateTag fix">修复</span>粘贴快捷键无法在一级界面直接激活搜索框并粘贴文本的问题
+	<br>
+	<br>2021-5-19
+	<br>
+	<span class="updateTag new">新增</span>公网安备
+	<br>
+	<br>2021-4-30
+	<br>
+	<span class="updateTag fix">修复</span>一级界面在搜索框未激活时无法响应部分浏览器快捷键的问题
+	<br>
+	<br>2021-4-26
+	<br>
+	<span class="updateTag imp">改进</span>便笺标记语言 [toTime] 语法的算法
+	<br>
+	<span class="updateTag fix">修复</span>Safari 浏览器中无法使用「-」或「.」作为便笺标记语言 [toTime] 语法的日期分隔符的问题
+	<br>
+	<br>2021-4-22
+	<br>
+	<span class="updateTag imp">改进</span>「空投」接收协同功能的文本复制动效
+	<br>
+	<br>2021-4-20
+	<br>
+	<span class="updateTag new">新增</span>「空投」接收协同功能（默认关闭，可在常规设置中开启）
+	<br>
+	<br>2021-4-19
+	<br>
+	<span class="updateTag new">新增</span>「使用数字键 0 ~ 9 打开前十个自定义网站捷径」选项（默认开启）
+	<br>
+	<span class="updateTag imp">改进</span>在网站捷径页按住 Ctrl 键即可查看前十个自定义网站捷径对应的数字快捷键
+	<br>
+	<span class="updateTag imp">改进</span>时间分隔符的闪烁动效
+	<br>
+	<br>2021-4-14
+	<br>
+	<span class="updateTag new">新增</span>「便笺标记语言」及其语法 [toTime yyyy-MM-dd]；现在，你可以在便笺中插入动态日期计算（倒数日 / 正数日）（将便笺固定到主屏幕后生效）
+	<br>
+	<span class="updateTag new">新增</span>「闪烁时间分隔符」选项
+	<br>
+	<br>2021-4-8
+	<br>
+	<span class="updateTag fix">修复</span>搜索栏及便笺编辑区域的右键菜单可能超出浏览器显示区域的问题
+	<br>
+	<br>2021-3-25
+	<br>
+	<span class="updateTag fix">修复</span>在更改了最小字号限制的浏览器上页脚显示错位的问题
+	<br>
+	<br>2021-3-24
+	<br>
+	<span class="updateTag new">新增</span>青柠起始页启用全新独立域名「 limestart.cn 」
+	<br>
+	<span class="updateTag new">新增</span>「更简洁的页脚信息」选项
+	<br>
+	<span class="updateTag fix">修复</span>在安卓设备上显示屏幕键盘时界面错位的问题
+	<br>
+	<span class="updateTag fix">修复</span>在手机上搜索引擎选择栏的动画效果异常的问题
+	<br>
+	<br>2021-3-7
+	<br>
+	<span class="updateTag fix">修复</span>部分用户「时间」的时区错误的问题
+	<br>
+	<br>2021-3-4
+	<br>
+	<span class="updateTag imp">改进</span>部分非线性动画的速度曲线
+	<br>
+	<br>2021-3-1
+	<br>
+	<span class="updateTag fix">修复</span>固定到主屏幕的便笺内容无法及时更新的问题
+	<br>
+	<br>2021-2-23
+	<br>
+	<span class="updateTag fix">修复</span>网站捷径的右键菜单可能超出浏览器显示区域的问题
+	<br>
+	<br>2021-2-19
+	<br>
+	<span class="updateTag new">新增</span>网站捷径图标自定义功能；现在，你可以将任意图片设置为你添加的网站捷径的图标
+	<br>
+	<span class="updateTag new">新增</span>重写青柠生成的自定义网站捷径图标算法并添加 77 种莫兰迪色系随机配色方案
+	<br>
+	<span class="updateTag imp">改进</span>其它细节改进
+	<br>
+	<span class="updateTag fix">修复</span>因自动生成网站捷径图标接口失效导致的部分自定义捷径图标无法正常显示的问题
+	<br>
+	<br>2021-1-9
+	<br>
+	<span class="updateTag fix">修复</span>自动生成的网站捷径图标显示裂图的问题
+	<br>
+	<span class="updateTag fix">修复</span>部分用户登录时出现「连接请求被拒绝」的问题
+	<br>
+	<br>2021-1-2
+	<br>
+	<span class="updateTag imp">改进</span>青柠起始页发生关键性错误时的自修复能力
+	<br>
+	<span class="updateTag imp">改进</span>重置青柠起始页时也将同时清理 PWA 缓存
+	<br>
+	<br>2020-12-18
+	<br>
+	<span class="updateTag fix">修复</span>使用鼠标滚轮或手势在网站捷径页与便笺页之间切换时，两个页面可能反复横跳的问题
+	<br>
+	<span class="updateTag fix">修复</span>在网站捷径页与便笺页之间切换时，弹出的相关右键菜单或对话框不会自动消失的问题
+	<br>
+	<span class="updateTag fix">修复</span>上下滚动网站捷径页时，弹出的相关右键菜单或对话框不会自动消失的问题
+	<br>
+	<span class="updateTag fix">修复</span>移动运营商的用户可能无法添加自定义网站捷径的问题
+	<br>
+	<br>2020-12-8
+	<br>
+	<span class="updateTag new">新增</span>2020 冬季限定动画效果上线（可在「常规设置 &gt; 视效和性能」中关闭）
+	<br>
+	<span class="updateTag imp">改进</span>去年冬季限定动画效果的算法
+	<br>
+	<span class="updateTag fix">修复</span>去年冬季限定动画效果无法自适应窗口大小改变的问题
+	<br>
+	<br>2020-12-7
+	<br>
+	<span class="updateTag imp">改进</span>顶部通知栏相关算法
+	<br>
+	<span class="updateTag imp">改进</span>调整网站捷径页/便笺页切换按钮的样式
+	<br>
+	<br>2020-12-6
+	<br>
+	<span class="updateTag fix">修复</span>开启/关闭「起始页加载时自动显示二级界面」选项时出现错误的问题
+	<br>
+	<br>2020-11-30
+	<br>
+	<span class="updateTag imp">改进</span>微调部分样式
+	<br>
+	<br>2020-11-28
+	<br>
+	<span class="updateTag fix">修复</span>数个与字体大小有关的问题
+	<br>
+	<br>2020-11-26
+	<br>
+	<span class="updateTag new">新增</span>「添加网站捷径」按钮的处理中动画
+	<br>
+	<span class="updateTag imp">改进</span>微调了部分右键菜单及「添加网站捷径」对话框在深色主题下的配色
+	<br>
+	<span class="updateTag imp">改进</span>「添加网站捷径」对话框处于打开状态时，在页面空白处点击会关闭该对话框而不回到一级界面
+	<br>
+	<span class="updateTag fix">修复</span>「设置」菜单按钮的鼠标悬停动画失效的问题
+	<br>
+	<span class="updateTag fix">修复</span>在非 Chromium 浏览器上部分界面文字字号过小的问题
+	<br>
+	<br>2020-11-22
+	<br>
+	<span class="updateTag new">新增</span>网站捷径页上下滚动时的顶部和底部边缘效果
+	<br>
+	<br>2020-11-21
+	<br>
+	<span class="updateTag new">新增</span>「完整显示固定到主屏幕的便笺内容」设置项；现在，固定的便笺可以显示全部内容
+	<br>
+	<span class="updateTag new">新增</span>「离开网站捷径页时自动将其回到顶部」设置项
+	<br>
+	<span class="updateTag new">新增</span>「更多搜索引擎」右键菜单项；在搜索框可以更加快捷地切换到次搜索引擎
+	<br>
+	<span class="updateTag imp">改进</span>便笺列表及固定便笺的首行文字截断方式
+	<br>
+	<span class="updateTag fix">修复</span>「为网站捷径应用毛玻璃效果」设置项导致的性能大幅下降问题
+	<br>
+	<span class="updateTag dep"></span>Safari 浏览器的兼容性警告
+	<br>
+	<br>2020-11-20
+	<br>
+	<span class="updateTag imp">改进</span>微调了文本框右键菜单的配色
+	<br>
+	<span class="updateTag fix">修复</span>添加自定义网站捷径时可能因为无法正确获取图标而导致图标无限转圈的问题
+	<br>
+	<span class="updateTag fix">修复</span>右键单击「一言」区域时无法进入二级界面的问题
+	<br>
+	<br>2020-11-11
+	<br>
+	<span class="updateTag fix">修复</span>「减弱动态效果」不可用的新问题
+	<br>
+	<br>2020-11-10
+	<br>
+	<span class="updateTag new">新增</span>「同步设置」选项，现可在您的所有已登录设备上同步个性化设置（默认关闭）
+	<br>
+	<span class="updateTag fix">修复</span>有时无法同步自定义网站捷径的问题
+	<br>
+	<span class="updateTag fix">修复</span>调整浏览器窗口大小后「时间」有可能错位的问题
+	<br>
+	<br>2020-11-8
+	<br>
+	<span class="updateTag fix">修复</span>有时无法保存用户昵称和生日信息的问题
+	<br>
+	<span class="updateTag fix">修复</span>二级界面发生错误时可能会显示代码的问题
+	<br>
+	<br>2020-11-5
+	<br>
+	<span class="updateTag fix">修复</span>必应壁纸点赞数据获取失败时，报错代码可能遮挡页面其它元素的问题
+	<br>
+	<span class="updateTag imp">改进</span>更换部分后端接口
+	<br>
+	<br>2020-11-4
+	<br>
+	<span class="updateTag imp">改进</span>重写部分后端
+	<br>
+	<br>2020-11-2
+	<br>
+	<span class="updateTag new">新增</span>在二级界面按左右方向键可以在网站捷径页与便笺页之间切换
+	<br>
+	<span class="updateTag fix">修复</span>「按任意键聚焦到搜索栏」不能正确工作的问题
+	<br>
+	<br>2020-10-28
+	<br>
+	<span class="updateTag new">新增</span>「为便笺区域应用毛玻璃效果」设置项
+	<br>
+	<span class="updateTag new">新增</span>「为便笺区域应用半透明效果」设置项
+	<br>
+	<span class="updateTag imp">改进</span>调整初始视效设置以改善流畅度
+	<br>
+	<span class="updateTag imp">改进</span>网站捷径图标加载时会显示占位符图标
+	<br>
+	<span class="updateTag fix">修复</span>「为遮罩层应用毛玻璃效果」设置项关闭且未开启「流畅模式」时，便笺列表样式错误的问题
+	<br>
+	<br>2020-10-22
+	<br>
+	<span class="updateTag new">新增</span>子资源完整性验证
+	<br>
+	<span class="updateTag fix">修复</span>开启「在每行显示更多网站捷径图标」时，便笺编辑框错位的问题
+	<br>
+	<span class="updateTag fix">修复</span>在 Firefox 浏览器上无法输入中文的问题
+	<br>
+	<br>2020-10-18
+	<br>
+	<span class="updateTag new">新增</span>「在每行显示更多网站捷径图标」设置项。现在你可以在每行显示至多10个网站捷径图标
+	<br>
+	<br>2020-10-16
+	<br>
+	<span class="updateTag imp">改进</span>为部分页面加载时加入了骨架屏样式
+	<br>
+	<br>2020-10-13
+	<br>
+	<span class="updateTag new">新增</span>便笺现可按 Tab 键实现文本缩进
+	<br>
+	<span class="updateTag imp">改进</span>微调「常规设置」页面内容
+	<br>
+	<span class="updateTag imp">改进</span>「低配置模式」更名为「流畅模式」
+	<br>
+	<br>2020-10-12
+	<br>
+	<span class="updateTag imp">改进</span>将部分弹窗改为动态创建
+	<br>
+	<span class="updateTag imp">改进</span>右上角浏览器兼容性警告弹窗与用户未登录提示弹窗重叠显示时的外观样式
+	<br>
+	<br>2020-10-10
+	<br>
+	<span class="updateTag new">新增</span>为便笺保存状态添加了更醒目的变化提示
+	<br>
+	<span class="updateTag imp">改进</span>便笺列表的高亮样式
+	<br>
+	<span class="updateTag imp">改进</span>「为遮罩层应用毛玻璃效果」设置项及其联动设置项
+	<br>
+	<br>2020-10-9
+	<br>
+	<span class="updateTag new">新增</span>为部分操作添加了加载图标
+	<br>
+	<span class="updateTag fix">修复</span>过长的用户名会溢出「用户」菜单来显示的问题
+	<br>
+	<br>2020-10-5
+	<br>
+	<span class="updateTag new">新增</span>删除预设捷径的功能
+	<br>
+	<span class="updateTag new">新增</span>「为遮罩层应用毛玻璃效果」设置项
+	<br>
+	<span class="updateTag imp">改进</span>优化动画效果流畅度
+	<br>
+	<span class="updateTag fix">修复</span>「添加网站捷径」对话框会被时间遮盖的问题
+	<br>
+	<br>2020-10-4
+	<br>
+	<span class="updateTag imp">改进</span>「在新标签页打开新页面」设置项现对网站捷径生效
+	<br>
+	<span class="updateTag fix">修复</span>在选中文本时如果鼠标移出便笺编辑框会回到一级界面的问题
+	<br>
+	<br>2020-10-3
+	<br>
+	<span class="updateTag new">新增</span>触摸左右滑动即可在快捷链接和便笺页面间切换
+	<br>
+	<span class="updateTag new">新增</span>在手机上长按空白处可以聚焦到搜索栏
+	<br>
+	<br>2020-10-2
+	<br>
+	<span class="updateTag fix">修复</span>在 macOS 的 Safari 浏览器中无法保存生日设置的问题
+	<br>
+	<span class="updateTag fix">修复</span>使用次搜索引擎时点击翻译会打开百度地图的问题
+	<br>
+	<br>2020-9-29
+	<br>
+	<span class="updateTag imp">改进</span>「减弱动态效果」选项将在 Safari 浏览器中强制启用
+	<br>
+	<span class="updateTag fix">修复</span>「起始页加载时自动显示二级界面」选项没有正确运行的问题
+	<br>
+	<span class="updateTag fix">修复</span>新用户注册后用户信息设置窗口不会弹出的问题
+	<br>
+	<br>2020-9-24
+	<br>
+	<span class="updateTag imp">改进</span>关闭「低配置模式」选项时也将联动其下方选项
+	<br>
+	<br>2020-9-22
+	<br>
+	<span class="updateTag new">新增</span>「为网站捷径应用半透明效果」选项（默认开启）
+	<br>
+	<span class="updateTag imp">改进</span>为自动生成的自定义网站捷径图标添加了 5 种新的随机配色方案
+	<br>
+	<span class="updateTag fix">修复</span>预设捷径展开/折叠动画不连贯的问题
+	<br>
+	<span class="updateTag fix">修复</span>Safari 浏览器中二级界面显示区域过高的问题
+	<br>
+	<span class="updateTag fix">修复</span>手机上网站捷径图标错位的问题
+	<br>
+	<span class="updateTag fix">修复</span>Safari 浏览器中搜索引擎选择栏不能及时收起的问题
+	<br>
+	<br>2020-9-20
+	<br>
+	<span class="updateTag imp">改进</span>优化中英文混排时的显示效果
+	<br>
+	<span class="updateTag fix">修复</span>自定义网站捷径会拖慢加载速度的问题
+	<br>
+	<br>2020-9-19
+	<br>
+	<span class="updateTag new">新增</span>「反馈」页面中新增青柠起始页经典版入口
+	<br>
+	<span class="updateTag imp">改进</span>在 Firefox 和旧 Edge 浏览器上隐藏了滚动条
+	<br>
+	<br>2020-9-18
+	<br>
+	<span class="updateTag fix">修复</span>在 iOS 14 系统上无法滚动的问题
+	<br>
+	<span class="updateTag fix">修复</span>在 iOS 系统上无法折叠预设捷径的问题
+	<br>
+	<span class="updateTag fix">修复</span>在 iOS 系统上无法通过预设捷径切换深色模式的问题
+	<br>
+	<span class="updateTag fix">修复</span>在 Safari 浏览器上图标错位的问题
+	<br>
+	<span class="updateTag fix">修复</span>无法关闭「自动聚焦到搜索栏」设置项的问题
+	<br>
+	<br>2020-9-12
+	<br>
+	<span class="updateTag new">新增</span>按键盘 0 ~ 9 数字键即可打开对应的自定义网站捷径
+	<br>
+	<span class="updateTag new">新增</span>青柠起始页经典版上线
+	<br>
+	<br>2020-9-10
+	<br>
+	<span class="updateTag imp">改进</span>折叠预设捷径功能
+	<br>
+	<span class="updateTag imp">改进</span>更新的「为网站捷径应用毛玻璃效果」设置项
+	<br>
+	<span class="updateTag fix">修复</span>「为网站捷径应用毛玻璃效果」设置项导致的自定义网站捷径功能崩溃问题
+	<br>
+	<br>2020-9-9
+	<br>
+	<span class="updateTag new">新增</span>经过重新设计的全新二级界面
+	<br>
+	<span class="updateTag new">新增</span>现在你可以添加无限个自定义网站捷径
+	<br>
+	<span class="updateTag new">新增</span>经过精简与改进的 10 个预设捷径（可通过右键菜单折叠隐藏）
+	<br>
+	<span class="updateTag imp">改进</span>在二级界面通过鼠标左键关闭右键菜单时，不再自动退回一级界面
+	<br>
+	<span class="updateTag imp">改进</span>其它多项细节改进
+	<br>
+	<span class="updateTag dep"></span>「时间」的下划线动效
+	<br>
+	<span class="updateTag dep"></span>二级界面「自定义网站捷径」与「便笺」页的缩放切换动效
+	<br>
+	<br>2020-8-9
+	<br>
+	<span class="updateTag fix">修复</span>在 Chromium 浏览器上有时出现壁纸边缘阴影闪烁的问题
+	<br>
+	<span class="updateTag fix">修复</span>部分地区无法下载必应壁纸问题
+	<br>
+	<span class="updateTag fix">修复</span>登录信息不会和其他热铁盒网站同步的问题
+	<br>
+	<br>2020-7-18
+	<br>
+	<span class="updateTag new">新增</span>PC 端快速上手引导
+	<br>
+	<span class="updateTag imp">改进</span>细节改进
+	<br>
+	<br>2020-7-14
+	<br>
+	<span class="updateTag imp">改进</span>更新热铁盒 API 域名
+	<br>
+	<br>2020-7-8
+	<br>
+	<span class="updateTag new">新增</span>「主题色」选项及全新主题色：靛青、魅紫、玫红、岛蓝
+	<br>
+	<br>2020-7-6
+	<br>
+	<span class="updateTag new">新增</span>「为背景图像应用径向渐变遮罩层」选项（默认开启）
+	<br>
+	<span class="updateTag new">新增</span>「天气」选项（默认关闭）
+	<br>
+	<span class="updateTag new">新增</span>升级天气组件至高级接口，提升稳定性、拓展功能
+	<br>
+	<br>2020-7-5
+	<br>
+	<span class="updateTag new">新增</span>「登录后显示问候」选项（默认开启）
+	<br>
+	<span class="updateTag imp">改进</span>优化二级界面右上角按钮的触发范围
+	<br>
+	<span class="updateTag fix">修复</span>「一言」处于隐藏状态时仍能响应点击的问题
+	<br>
+	<br>2020-7-4
+	<br>
+	<span class="updateTag new">新增</span>全新「天气」组件
+	<br>
+	<span class="updateTag fix">修复</span>由于旧版天气 API 停止维护导致天气组件无法运行的问题
+	<br>
+	<br>2020-7-1
+	<br>
+	<span class="updateTag fix">修复</span>在输入法没有完成输入时点击联想关键词会导致搜索词错乱的问题
+	<br>
+	<span class="updateTag fix">修复</span>在安卓设备上不识别回车键的新问题
+	<br>
+	<span class="updateTag fix">修复</span>对自定义链接进行排序时会报错的新问题
+	<br>
+	<span class="updateTag fix">修复</span>屏幕阅读器无法识别到部分按钮的问题
+	<br>
+	<br>2020-6-30
+	<br>
+	<span class="updateTag new">新增</span>「为搜索候选栏应用毛玻璃效果」选项（默认开启）
+	<br>
+	<span class="updateTag imp">改进</span>「反馈」页面的外观细节
+	<br>
+	<span class="updateTag fix">修复</span>用键盘上下键选中搜索候选栏中 「清除历史记录」 项时也可以按回车进行搜索的问题
+	<br>
+	<span class="updateTag fix">修复</span>用键盘上下键选择搜索候选项时，高亮光标有时不会自动重置的问题
+	<br>
+	<br>2020-6-29
+	<br>
+	<span class="updateTag imp">改进</span>重写设置项存储算法
+	<br>
+	<br>2020-6-28
+	<br>
+	<span class="updateTag new">新增</span>拖拽图片文件到页面上即可设置为壁纸
+	<br>
+	<span class="updateTag imp">改进</span>提升非首次打开页面时的加载速度
+	<br>
+	<span class="updateTag fix">修复</span>在 iOS 系统中无法编辑自定义网站捷径的问题
+	<br>
+	<br>2020-6-20
+	<br>
+	<span class="updateTag imp">改进</span>为自定义网站捷径排序时的动画效果
+	<br>
+	<br>2020-6-19
+	<br>
+	<span class="updateTag new">新增</span>自定义网站捷径排序功能
+	<br>
+	<span class="updateTag new">新增</span>保存自定义网站捷径时的动画效果
+	<br>
+	<span class="updateTag imp">改进</span>提升非首次打开页面时自定义网站捷径加载速度
+	<br>
+	<br>2020-6-18
+	<br>
+	<span class="updateTag imp">改进</span>多处细节改进
+	<br>
+	<br>2020-6-15
+	<br>
+	<span class="updateTag new">新增</span>「自定义深色主题自动启用时段」功能
+	<br>
+	<span class="updateTag imp">改进</span>更新日志的浏览体验
+	<br>
+	<br>2020-6-8
+	<br>
+	<span class="updateTag imp">改进</span>微调对话框的关闭动画效果
+	<br>
+	<br>2020-6-3
+	<br>
+	<span class="updateTag imp">改进</span>提升账号安全性
+	<br>
+	<span class="updateTag fix">修复</span>更新日志在旧版 iOS 系统中无法滚动的问题
+	<br>
+	<br>2020-5-27
+	<br>
+	<span class="updateTag imp">改进</span>编辑自定义网站捷径的体验
+	<br>
+	<br>2020-5-24
+	<br>
+	<span class="updateTag imp">改进</span>将滚轮切换二级界面的判定范围扩大至全屏
+	<br>
+	<span class="updateTag fix">修复</span>搜索内容为空白时也会被记录至历史记录的问题
+	<br>
+	<br>2020-5-23
+	<br>
+	<span class="updateTag imp">改进</span>优化搜索候选栏弹出动画
+	<br>
+	<br>2020-5-21
+	<br>
+	<span class="updateTag imp">改进</span>开启「搜索历史记录」时，「一言」也可显示
+	<br>
+	<span class="updateTag imp">改进</span>微调搜索候选栏在手机上的宽度
+	<br>
+	<span class="updateTag fix">修复</span>搜索关键词字数过多时历史记录的文字会溢出显示的问题
+	<br>
+	<br>2020-5-20
+	<br>
+	<span class="updateTag new">新增</span>「搜索历史记录」功能（默认关闭，可在常规设置中开启）
+	<br>
+	<span class="updateTag imp">改进</span>微调部分动画
+	<br>
+	<span class="updateTag fix">修复</span>若干低配置模式下深色主题样式显示异常的新问题
+	<br>
+	<br>2020-5-19
+	<br>
+	<span class="updateTag new">新增</span>点击搜索引擎切换按钮将直接执行搜索
+	<br>
+	<span class="updateTag imp">改进</span>提升起始页加载速度
+	<br>
+	<span class="updateTag fix">修复</span>无法切换搜索引擎的新问题
+	<br>
+	<span class="updateTag fix">修复</span>激活搜索栏后，背景图像有时没有毛玻璃效果的新问题
+	<br>
+	<span class="updateTag fix">修复</span>搜索引擎切换按钮有时会消失的问题
+	<br>
+	<br>2020-5-18
+	<br>
+	<span class="updateTag imp">改进</span>微调低配置模式的 UI 样式
+	<br>
+	<span class="updateTag imp">改进</span>其它细节改进
+	<br>
+	<span class="updateTag imp">改进</span>提升搜索关键词联想的加载速度
+	<br>
+	<br>2020-5-16
+	<br>
+	<span class="updateTag new">新增</span>搜狗搜索和 360 搜索
+	<br>
+	<span class="updateTag new">新增</span>当页面不可见时，动态壁纸将暂停播放以节省电池用量
+	<br>
+	<span class="updateTag new">新增</span>在低配置模式下，当页面失去焦点时，动态壁纸将暂停播放
+	<br>
+	<span class="updateTag fix">修复</span>有时点击搜索框时会误切换搜索引擎的问题
+	<br>
+	<br>2020-5-15
+	<br>
+	<span class="updateTag imp">改进</span>严格了「一言」API 的句库分类以减少奇怪的句子
+	<br>
+	<span class="updateTag imp">改进</span>微调了自定义网站捷径的样式
+	<br>
+	<span class="updateTag imp">改进</span>QQ 浏览器用户现在可以以正确的渲染引擎访问起始页了
+	<br>
+	<span class="updateTag new">新增</span>起始页现在可以被安装为 PWA 应用了
+	<br>
+	<span class="updateTag fix">修复</span>在带刘海的 iPhone 上横屏时会出现灰边的问题
+	<br>
+	<span class="updateTag fix">修复</span>遇到安全检查验证码的用户无法正常使用起始页的问题
+	<br>
+	<br>2020-5-14
+	<br>
+	<span class="updateTag new">新增</span>为自动生成的自定义网站捷径图标添加了 10 种新的随机配色方案
+	<br>
+	<span class="updateTag new">新增</span>针对 IE 浏览器及 JavaScript 文件加载失败的情况设计了全新的错误提示页面
+	<br>
+	<span class="updateTag imp">改进</span>其它细节改进
+	<br>
+	<br>2020-5-12
+	<br>
+	<span class="updateTag new">新增</span>起始页出现常见错误时将有更易于理解的报错提示
+	<br>
+	<span class="updateTag imp">改进</span>在不支持深色主题的浏览器上现在也可以开启深色主题了
+	<br>
+	<span class="updateTag imp">改进</span>提升起始页在 Safari 浏览器上的加载速度
+	<br>
+	<br>2020-4-30
+	<br>
+	<span class="updateTag new">新增</span>3 张默认壁纸及 1 张动态壁纸
+	<br>
+	<span class="updateTag imp">改进</span>提升代码规范性
+	<br>
+	<span class="updateTag imp">改进</span>微调低配置模式的 UI 样式
+	<br>
+	<span class="updateTag imp">改进</span>「背景图像偏好」页面在手机上的排版
+	<br>
+	<span class="updateTag imp">改进</span>其他细节改进
+	<br>
+	<span class="updateTag fix">修复</span>「账号管理」页面中的部分元素没有对齐的问题
+	<br>
+	<span class="updateTag fix">修复</span>「浏览器内核版本过低」弹窗在手机上会遮挡界面的问题
+	<br>
+	<span class="updateTag fix">修复</span>「起始页加载时自动显示二级界面」选项开启时，部分界面元素可能错误显示的问题
+	<br>
+	<br>2020-4-25
+	<br>
+	<span class="updateTag imp">改进</span>提升起始页加载速度
+	<br>
+	<span class="updateTag imp">改进</span>提升便笺保存速度
+	<br>
+	<br>2020-4-23
+	<br>
+	<span class="updateTag new">新增</span>「搜索引擎偏好」，8 个预设搜索引擎及完全自定义搜索引擎供你随心切换
+	<br>
+	<span class="updateTag new">新增</span>「重置设置」选项
+	<br>
+	<span class="updateTag imp">改进</span>低配置模式的 UI 样式
+	<br>
+	<span class="updateTag imp">改进</span>其他细节改进
+	<br>
+	<span class="updateTag fix">修复</span>「背景图像偏好」页面中的按钮在手机上可能换行显示的问题
+	<br>
+	<span class="updateTag fix">修复</span>「背景图像偏好」页面中对必应壁纸的介绍在字数过多时可能影响排版的问题
+	<br>
+	<br>2020-4-21
+	<br>
+	<span class="updateTag imp">改进</span>那个彩蛋
+	<br>
+	<span class="updateTag fix">修复</span>收藏一言到便笺时，单词间空格会被意外去除的问题
+	<br>
+	<span class="updateTag new">新增</span>一个彩蛋
+	<br>
+	<span class="updateTag new">新增</span>出错时将显示错误信息
+	<br>
+	<span class="updateTag fix">修复</span>部分用户无法固定便笺的问题
+	<br> 其它细节改进和问题修复
+	<br>
+	<br>2020-4-20
+	<br>
+	<span class="updateTag new">新增</span>「收藏一言到便笺」功能
+	<br>
+	<span class="updateTag fix">修复</span>直接输入文字创建新便笺时，便笺菜单栏可能不显示的问题
+	<br> 其它细节改进和问题修复
+	<br>
+	<br>2020-4-19
+	<br>
+	<span class="updateTag new">新增</span>「起始页加载时自动显示二级界面」选项
+	<br>
+	<span class="updateTag imp">改进</span>低配置模式的 UI 样式
+	<br>
+	<span class="updateTag imp">改进</span>微调了关键词候选框的 UI 样式
+	<br>
+	<span class="updateTag fix">修复</span>低配置模式下右键菜单项没有鼠标悬浮效果的问题
+	<br>
+	<br>2020-4-13
+	<br>
+	<span class="updateTag new">新增</span>「低配置模式」选项，可显著提升流畅度
+	<br>
+	<span class="updateTag imp">改进</span>微调了网站捷径页与便笺页的切换动画
+	<br>
+	<span class="updateTag imp">改进</span>网站捷径中「网盘」的服务提供方也会随搜索引擎的切换而改变
+	<br>
+	<span class="updateTag imp">改进</span>其他细节改进
+	<br>
+	<span class="updateTag fix">修复</span>使用百度引擎搜索某些非中文字符时可能转为乱码的问题
+	<br>
+	<span class="updateTag fix">修复</span>静态壁纸与动态壁纸间互相切换后，背景图像没有立即应用模糊效果的问题
+	<br>
+	<br>2020-4-12
+	<br>
+	<span class="updateTag new">新增</span>「为网站捷径栏应用毛玻璃效果」选项
+	<br>
+	<span class="updateTag imp">改进</span>常规设置页面的分组逻辑及界面设计
+	<br>
+	<br>2020-4-11
+	<br>
+	<span class="updateTag new">新增</span>全新的网站捷径 UI
+	<br>
+	<span class="updateTag new">新增</span>为便笺、自定义网站捷径的输入框添加了右键编辑菜单
+	<br>
+	<span class="updateTag new">新增</span>「一言功能」选项（默认开启）
+	<br>
+	<span class="updateTag imp">改进</span>微调了 iPad 上「一言」的位置
+	<br>
+	<span class="updateTag fix">修复</span>右键编辑菜单某些情况下没有消失的问题
+	<br>
+	<span class="updateTag fix">修复</span>自定义网站捷径的右键菜单可能和页面切换按钮重叠显示的问题
+	<br>
+	<span class="updateTag fix">修复</span>便笺列表在手机上无法完全滚动显示的问题
+	<br>
+	<span class="updateTag fix">修复</span>便笺页面在手机上某些情况下可能显示错位的问题
+	<br>
+	<span class="updateTag fix">修复</span>便笺菜单栏一直显示的问题
+	<br>
+	<span class="updateTag fix">修复</span>「起始页加载时不自动聚焦到搜索栏」选项和「将便笺页作为默认的二级界面」选项在背景图像偏好设为「动态」时无法生效的问题
+	<br>
+	<br>2020-4-9
+	<br>
+	<span class="updateTag new">新增</span>你现在可以编辑已添加的自定义网站捷径了
+	<br>
+	<span class="updateTag new">新增</span>你现在可以在「背景图像偏好」页面中下载每日必应壁纸
+	<br>
+	<span class="updateTag new">新增</span>「将便笺页作为默认的二级界面」选项
+	<br>
+	<span class="updateTag imp">改进</span>切换搜索引擎时，网站捷径中「翻译」「地图」「图片」的服务提供方也会随之改变
+	<br>
+	<span class="updateTag imp">改进</span>针对（由于浏览器限制导致）设置自定义壁纸失败的情况做了报错对话框
+	<br>
+	<span class="updateTag imp">改进</span>设置自定义网站捷径时，在网址输入框按下回车即可直接提交（标题会自动获取）
+	<br>
+	<span class="updateTag imp">改进</span>其它细节改进
+	<br>
+	<span class="updateTag fix">修复</span>彻底解决了删除自定义网站捷径后会自动回到一级界面的问题
+	<br>
+	<br>2020-4-7
+	<br>
+	<span class="updateTag new">新增</span>一个彩蛋
+	<br>
+	<span class="updateTag imp">改进</span>针对屏幕分辨率低于 1920 × 1080 的电脑进行了进一步界面适配
+	<br>
+	<span class="updateTag imp">改进</span>其它细节改进
+	<br>
+	<br>2020-4-6
+	<br> 「开始」起始页更名为「青柠起始页」
+	<br>
+	<span class="updateTag new">新增</span>全新图标及 Logo
+	<br>
+	<span class="updateTag new">新增</span>账号管理页面的全新动效
+	<br>
+	<span class="updateTag new">新增</span>在一级界面（搜索页）单击鼠标右键即可直接打开二级界面（网站捷径页）
+	<br>
+	<span class="updateTag new">新增</span>「起始页加载时自动聚焦到搜索栏」选项（默认开启）
+	<br>
+	<span class="updateTag imp">改进</span>「便笺」全面适配手机
+	<br>
+	<span class="updateTag imp">改进</span>美化更新日志页面的样式
+	<br>
+	<span class="updateTag imp">改进</span>背景图像偏好页面的内容
+	<br>
+	<span class="updateTag imp">改进</span>优化自定义网站捷径的读取效率
+	<br>
+	<span class="updateTag fix">修复</span>网站捷径页在手机上没有居中显示的问题
+	<br>
+	<span class="updateTag fix">修复</span>点击「一言」的动画效果无效的问题
+	<br> 其它细节改进和问题修复
+	<br>
+	<br>2020-4-3
+	<br>
+	<span class="updateTag imp">改进</span>增大了弹窗关闭按钮的判定范围以进一步优化点击体验
+	<br>
+	<span class="updateTag new">新增</span>点击「一言」时的动画效果
+	<br>
+	<span class="updateTag imp">改进</span>优化弹窗关闭按钮的点击体验
+	<br>
+	<span class="updateTag imp">改进</span>优化登录框在手机上的宽度
+	<br>
+	<span class="updateTag fix">修复</span>在旧版 Edge 上搜索框会反复横跳的问题
+	<br>
+	<br>2020-4-1
+	<br>
+	<span class="updateTag new">新增</span>便笺云同步
+	<br>
+	<span class="updateTag fix">修复</span>在手机上有时无法响应触摸的问题
+	<br>
+	<br>2020-3-31
+	<br>
+	<span class="updateTag imp">改进</span>优化了小窗口下固定便笺的 UI 适配
+	<br>
+	<span class="updateTag fix">修复</span>无法搜索带特殊符号的内容的问题
+	<br>
+	<br>2020-3-30
+	<br>
+	<span class="updateTag new">新增</span>未登录状态提示与标识
+	<br>
+	<span class="updateTag fix">修复</span>背景图像未加载时，起始页背景色出现色彩断层的问题
+	<br>
+	<br>2020-3-29
+	<br>
+	<span class="updateTag new">新增</span>添加自定义网站捷径时可以自动获取网站标题的功能
+	<br>
+	<span class="updateTag imp">改进</span>重写获取网站捷径图标的算法，提升图标获取成功率
+	<br>
+	<span class="updateTag imp">改进</span>降低页面渲染所需的资源，提升性能
+	<br>
+	<span class="updateTag imp">改进</span>提升必应搜索的调用速度
+	<br>
+	<span class="updateTag imp">改进</span>重写关键词联想功能，提升使用体验
+	<br>
+	<span class="updateTag imp">改进</span>禁用第三方 Cookie 将不会影响自动登录
+	<br>
+	<span class="updateTag fix">修复</span>添加自定义网站捷径的对话框有时会超出页面显示范围的问题
+	<br>
+	<span class="updateTag fix">修复</span>自定义链接的文字会溢出边框的问题
+	<br>
+	<span class="updateTag fix">修复</span>删除自定义网站捷径后会返回第一级界面的问题
+	<br>
+	<span class="updateTag fix">修复</span>在导航页面和便笺页面之间切换有时会鬼畜的问题
+	<br>
+	<span class="updateTag fix">修复</span>在部分浏览器上无法搜索的问题
+	<br>
+	<br>2020-3-26
+	<br>
+	<span class="updateTag imp">改进</span>UI 细节调整
+	<br>
+	<span class="updateTag fix">修复</span>重写必应壁纸「点赞」算法，修复了访问流量过大时可能导致的功能崩溃问题
+	<br>
+	<br>2020-3-25
+	<br>
+	<span class="updateTag new">新增</span>重写「便笺」算法，现在你可以将至多 3 条便笺固定到主屏幕
+	<br>
+	<span class="updateTag fix">修复</span>修复了在「便笺」页面滚动鼠标滚轮会返回至网站捷径页面的问题
+	<br>
+	<br>2020-3-24
+	<br>
+	<span class="updateTag new">新增</span>「深色主题」
+	<br>
+	<br>2020-3-23
+	<br>
+	<span class="updateTag imp">改进</span>添加完自定义网站捷径后，文本框会自动清空
+	<br>
+	<span class="updateTag imp">改进</span>其他细节及交互改进
+	<br>
+	<span class="updateTag fix">修复</span>修复了添加自定义网站捷径的弹窗有时无法立即弹出的问题
+	<br>
+	<br>2020-3-22
+	<br>
+	<span class="updateTag new">新增</span>「自动清空搜索栏」选项（默认开启）
+	<br>
+	<span class="updateTag new">新增</span>「在新标签页显示搜索结果」选项（默认开启）
+	<br>
+	<span class="updateTag imp">改进</span>为「一言」引入了毛玻璃背景效果
+	<br>
+	<br>2020-3-17
+	<br>
+	<span class="updateTag fix">修复</span>多处导致界面元素显示错位的问题
+	<br>
+	<br>2020-3-16
+	<br>
+	<span class="updateTag new">新增</span>搜索栏收起时，按下任意键可直接激活搜索栏
+	<br>
+	<span class="updateTag new">新增</span>在搜索栏输入网址可直接打开网页
+	<br>
+	<span class="updateTag imp">改进</span>优化动画效果
+	<br>
+	<span class="updateTag imp">改进</span>优化起始页在中国境外的加载速度
+	<br>
+	<span class="updateTag fix">修复</span>页面边缘有时没有毛玻璃效果的问题
+	<br>
+	<span class="updateTag fix">修复</span>当自定义网站捷径的网址不是网站首页时无法获取其图标的问题
+	<br>
+	<span class="updateTag fix">修复</span>搜索引擎选择栏在小窗口中显示错位的问题
+	<br>
+	<br>2020-3-15
+	<br>
+	<span class="updateTag new">新增</span>「反馈」页面及常见问题解答
+	<br>
+	<span class="updateTag imp">改进</span>调整了服务器资源以优化加载流程
+	<br>
+	<br>2020-3-14
+	<br>
+	<span class="updateTag imp">改进</span>严格了「一言」API 的句库分类
+	<br>
+	<span class="updateTag imp">改进</span>优化了「减弱动态效果」功能。当掉帧现象严重时，可在设置中开启此项
+	<br>
+	<br>2020-2-29
+	<br>
+	<span class="updateTag new">新增</span>针对 Firefox 和 Safari 等不支持网页读取剪贴板的浏览器设计了复制粘贴快捷键提示框
+	<br>
+	<br>2020-2-28
+	<br>
+	<span class="updateTag new">新增</span>搜索栏右键菜单（Firefox 暂不可用）
+	<br>
+	<span class="updateTag imp">改进</span>添加了两个常用链接以补齐第三行
+	<br>
+	<span class="updateTag imp">改进</span>其他细节改进
+	<br>
+	<br>2020-2-14
+	<br>
+	<span class="updateTag new">新增</span>用户自定义背景图像的全新功能
+	<br>
+	<span class="updateTag imp">改进</span>必应壁纸将与必应官网同步更新
+	<br>
+	<span class="updateTag imp">改进</span>优化起始页加载时的动画效果
+	<br>
+	<span class="updateTag fix">修复</span>在 Firefox 上可能出现 FOUC（无样式内容闪烁）的问题
+	<br>
+	<br>2020-1-25
+	<br>
+	<span class="updateTag new">新增</span>紧急情况及突发严重灾害推送系统；断网、本站服务器离线情况下也可接收定时推送
+	<br>
+	<br>2020-1-24
+	<br>
+	<span class="updateTag fix">修复</span>必应壁纸每日点赞数量可能延迟归零的问题
+	<br>
+	<span class="updateTag fix">修复</span>自定义网站捷径网站的图标某些情况下可能无法被获取的问题
+	<br>
+	<span class="updateTag fix">修复</span>右上角设置、用户等按钮在不显示时也可能被点击的问题
+	<br>
+	<br>2020-1-12
+	<br>
+	<span class="updateTag new">新增</span>「减弱动态效果」选项
+	<br>
+	<span class="updateTag imp">改进</span>美化了账号管理页面的 UI
+	<br>
+	<span class="updateTag fix">修复</span>问候语偶尔会弹出两次的问题
+	<br>
+	<br>2020-1-6
+	<br>
+	<span class="updateTag imp">改进</span>为便笺界面增加了毛玻璃效果
+	<br>
+	<span class="updateTag imp">改进</span>恢复了背景图片淡入动画
+	<br>
+	<span class="updateTag imp">改进</span>大幅优化起始页加载速度
+	<br>
+	<span class="updateTag imp">改进</span>安全性提升
+	<br>
+	<br>2020-1-5
+	<br>
+	<span class="updateTag imp">改进</span>调整了背景图像的滤镜效果
+	<br>
+	<span class="updateTag imp">改进</span>美化了自定义网站捷径在窗口大小改变时的样式
+	<br>
+	<br>2020-1-1
+	<br> 新年快乐！
+	<br>
+	<br>2019-12-29
+	<br>
+	<span class="updateTag fix">修复</span>某些情况下弹窗会被另一个弹窗遮挡的问题
+	<br>
+	<br>2019-12-19
+	<br>
+	<span class="updateTag new">新增</span>冬季限定圣诞动画效果上线（可在 右上角 设置 - 常规设置 中关闭）
+	<br>
+	<br>2019-12-17
+	<br>
+	<span class="updateTag new">新增</span>「问候语」生日祝福
+	<br>
+	<br>2019-12-16
+	<br>
+	<span class="updateTag new">新增</span>全新的用户信息编辑页面
+	<br>
+	<span class="updateTag imp">改进</span>背景图像偏好页面样式微调
+	<br>
+	<span class="updateTag fix">修复</span>自定义网站捷径无法正常工作的问题
+	<br>
+	<br>2019-12-11
+	<br> （以下累积更新由杨尚臻进行）
+	<br>
+	<span class="updateTag fix">修复</span>必应壁纸点赞数量可能被不定时清零的问题
+	<br> 其它代码优化、安全性提升及问题修复
+	<br>
+	<br>2019-12-5
+	<br>
+	<span class="updateTag new">新增</span>切换搜索引擎功能
+	<br>
+	<span class="updateTag imp">改进</span>美化了「一言」框的样式
+	<br>
+	<span class="updateTag imp">改进</span>调整了搜索候选栏的样式
+	<br>
+	<span class="updateTag imp">改进</span>点击起始页更新提示可直接查看更新内容
+	<br>
+	<br>2019-11-30
+	<br>
+	<span class="updateTag imp">改进</span>优化代码以小幅提升动画效果帧数
+	<br>
+	<span class="updateTag imp">改进</span>搜索栏里的文字不会再随着鼠标悬停的搜索候选项而改变
+	<br>
+	<span class="updateTag fix">修复</span>单击翻译候选项并未使用百度翻译搜索的问题
+	<br>
+	<br>2019-11-29
+	<br>
+	<span class="updateTag fix">修复</span>搜索栏对不同屏幕尺寸适配不到位的新问题
+	<br>
+	<br>2019-11-28
+	<br>
+	<span class="updateTag fix">修复</span>搜索候选栏无法直接用鼠标点击操作的问题
+	<br>
+	<span class="updateTag fix">修复</span>搜索栏没有内容时，搜索候选栏仍可能显示的问题
+	<br>
+	<span class="updateTag fix">修复</span>浏览器开启无痕模式时每次打开起始页都会提示更新完成的问题
+	<br>
+	<br>2019-11-18
+	<br>
+	<span class="updateTag new">新增</span>你会在起始页每次更新后首次访问时得到提示
+	<br>
+	<span class="updateTag imp">改进</span>点击被固定的便笺即可直接打开便笺编辑页面
+	<br>
+	<span class="updateTag imp">改进</span>使用鼠标滚轮或（触控板 / 触摸屏）左右滑动即可在快捷链接和便笺页面间切换
+	<br>
+	<span class="updateTag imp">改进</span>优化移动设备自定义网站捷径的外观布局
+	<br>
+	<br>2019-11-17
+	<br>
+	<span class="updateTag new">新增</span>修改用户名和生日功能（右上角 用户 - 账号管理）
+	<br>
+	<br>2019-11-16
+	<br>
+	<span class="updateTag new">新增</span>「捐助我」界面
+	<br>
+	<span class="updateTag fix">修复</span>手机端界面显示错位及动态壁纸相关问题
+	<br>
+	<span class="updateTag fix">修复</span>便笺页切换按钮可能被自定义网站捷径遮挡的问题
+	<br> 其他细节改进及问题修复
+	<br>
+	<br>2019-9-23
+	<br>
+	<span class="updateTag new">新增</span>带有主要更新内容说明的欢迎页面
+	<br>
+	<span class="updateTag fix">修复</span>Safari 不支持毛玻璃效果的问题
+	<br>
+	<span class="updateTag fix">修复</span>某些窗口有时无法交互的问题
+	<br>
+	<br>2019-9-19
+	<br>
+	<span class="updateTag new">新增</span>一张默认壁纸
+	<br>
+	<span class="updateTag imp">改进</span>自定义网站捷径的交互体验
+	<br>
+	<span class="updateTag imp">改进</span>更新日志排版优化
+	<br>
+	<span class="updateTag imp">改进</span>引入多处毛玻璃效果（Firefox 暂不支持）
+	<br>
+	<span class="updateTag fix">修复</span>必应壁纸信息可能被意外触发显示的问题
+	<br>
+	<br>2019-9-18
+	<br>
+	<span class="updateTag new">新增</span>「自定义网站捷径」功能
+	<br>
+	<span class="updateTag new">新增</span>账号系统（支持跨设备云端同步快捷导航）
+	<br>
+	<span class="updateTag imp">改进</span>必应壁纸信息的全新 UI 及动画效果
+	<br>
+	<span class="updateTag fix">修复</span>页面载入时随机格言可能遮挡其它元素的问题
+	<br>
+	<span class="updateTag fix">修复</span>必应每日壁纸无法加载的问题
+	<br> 其它细节改进和问题修复（感谢杨尚臻提供的帮助）
+	<br>
+	<br>2019-8-5
+	<br>
+	<span class="updateTag fix">修复</span>偶发性背景图像闪烁的问题
+	<br>
+	<br>2019-7-7
+	<br>
+	<span class="updateTag imp">改进</span>提升了页面加载流畅度
+	<br>
+	<br>2019-6-24
+	<br>
+	<span class="updateTag imp">改进</span>主按钮的新动画效果
+	<br>
+	<br>2019-6-18
+	<br>
+	<span class="updateTag new">新增</span>「背景图像偏好」页面的全新 UI
+	<br>
+	<span class="updateTag imp">改进</span>「便笺」页面的 UI 调整
+	<br> （由杨尚臻进行的）其他安全性更新
+	<br>
+	<br>2019-4-10
+	<br>
+	<span class="updateTag new">新增</span>「固定便笺到主屏幕」和「删除便笺」功能
+	<br>
+	<br>2019-2-15
+	<br>
+	<span class="updateTag imp">改进</span>美化了移动端和「关于」界面的 UI
+	<br>
+	<br>2019-2-14
+	<br>
+	<span class="updateTag new">新增</span>动态壁纸
+	<br>
+	<br>2019-2-6
+	<br>
+	<span class="updateTag new">新增</span>「天气」功能
+	<br>
+	<br>2019-1-29
+	<br>
+	<span class="updateTag new">新增</span>「便笺」功能
+	<br>
+	<br>2019-1-16
+	<br>
+	<span class="updateTag imp">改进</span>搜索框及候选栏 UI 调整；搜索框上方的标题现在将显示系统时间
+	<br>
+	<br>2019-1-15
+	<br>
+	<span class="updateTag new">新增</span>将鼠标移至「喜欢」按钮上即可查看每日背景的相关信息
+	<br>
+	<span class="updateTag imp">改进</span>微调了搜索框的外观
+	<br>
+	<br>2019-1-11
+	<br>
+	<span class="updateTag imp">改进</span>「喜欢」按钮图标及体验美化
+	<br>
+	<br>2019-1-10
+	<br>
+	<span class="updateTag new">新增</span>「喜欢」按钮：可以为喜欢的背景图像投票
+	<br>
+	<span class="updateTag imp">改进</span>更换了由 RTH 提供的背景图片 API
+	<br>
+	<br>2019-1-9
+	<br>
+	<span class="updateTag imp">改进</span>UI 调整：排版优化；部分配色方案改为浅色系
+	<br>
+	<br>2018-11-1
+	<br>
+	<span class="updateTag imp">改进</span>UI 调整：引入高斯模糊特效
+	<br>
+	<br>2018-10-31
+	<br>
+	<span class="updateTag new">新增</span>浏览器现在会保存你对「切换为默认 / 每日背景」的选择
+	<br>
+	<br>2018-10-3
+	<br>
+	<span class="updateTag imp">改进</span>添加常用链接；交互细节调整
+	<br>
+	<br>2018-8-16
+	<br>
+	<span class="updateTag imp">改进</span>进一步优化关键词联想候选框的弹出速度
+	<br>
+	<br>2018-6-10
+	<br>
+	<span class="updateTag imp">改进</span>更新关键词联想接口、优化候选框的弹出速度
+	<br>
+	<br>2018-5-1
+	<br>
+	<span class="updateTag imp">改进</span>全面升级为 Https 加密协议
+	<br>
+	<br>2018-4-25
+	<br>
+	<span class="updateTag imp">改进</span>移动端 UI 美化
+	<br>
+	<br>2018-4-17
+	<br>
+	<span class="updateTag fix">修复</span>快捷导航在手机上排版混乱的问题
+	<br>
+	<br>2018-4-16
+	<br>
+	<span class="updateTag fix">修复</span>默认背景图片有时无法完全填充页面的问题
+	<br>
+	<span class="updateTag fix">修复</span>在 iOS 上点击回车无法执行搜索的问题
+	<br>
+	<br>2018-4-12
+	<br>
+	<span class="updateTag imp">改进</span>更换背景图片 API，提升加载速度和稳定性
+	<br>
+	<br>2018-3-20
+	<br>
+	<span class="updateTag new">新增</span>搜索候选栏「翻译」选项
+	<br>
+	<br>2018-3-16
+	<br>
+	<span class="updateTag imp">改进</span>网页加载时将直接显示默认背景
+	<br>
+	<br>2018-3-4
+	<br>
+	<span class="updateTag new">新增</span>「切换为默认背景」按钮
+	<br>
+	<span class="updateTag imp">改进</span>脚本加载优先级调整
+	<br>
+	<br>2017-11-10
+	<br>
+	<span class="updateTag imp">改进</span>UI 调整
+	<br>
+	<br>2017-10-29
+	<br>
+	<span class="updateTag imp">改进</span>UI 调整；背景图片显示机制及淡入动画
+	<br>
+	<br>2017-10-28
+	<br>
+	<span class="updateTag new">新增</span>适配移动设备
+	<br>
+	<br>2017-10-15
+	<br>
+	<span class="updateTag new">新增</span>「导航」页面
+	<br>
+	<br>2017-10-5
+	<br>
+	<span class="updateTag imp">改进</span>UI 调整
+	<br>
+	<br>2017-10-3
+	<br>
+	<span class="updateTag new">新增</span>「一言」功能
+	<br>
+	<br>2017-10-2
+	<br> 上线
+</div>
+    <script src="js/log.js"></script>
+</body>
+
+</html>
