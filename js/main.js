@@ -37,9 +37,11 @@ var autoClrSearchBar = localStorage.getItem("autoClrSearchBar") == "on";
 var openInNew = localStorage.getItem("openInNew") == "on";
 var autoFocus = localStorage.getItem("autoFocus") == "on";
 var hitokoto = localStorage.getItem("hitokoto") == "on";
+var kSearchHistory = localStorage.getItem('kSearchHistory') == "on"
 var reduceMotion = (isEdge || isSafari) ? true : localStorage.getItem("reduceMotion") == "on";
 var navLinksBlurEf = localStorage.getItem("navLinksBlurEf") == "on";
 var autoDarkMode = localStorage.getItem("autoDarkMode") == "on";
+var searchhistry = localStorage.getItem("searchhistry")
 var browserWarning = false;
 //let snowEf = localStorage.getItem("snowEf");
 var pushClass;
@@ -76,10 +78,31 @@ input0.onkeydown = event => {
 };
 input0.onfocus = () => {
 	if (autoClrSearchBar === false) {
+		chkAutoClrSearchBar.checked = false;
 		input0.select();
 	}
 	if (hitokoto === true) {
 		quotebox.style.opacity = "1";
+		chkHitokoto.checked = true ;
+	}
+	if (kSearchHistory === true) {
+		searchSuggestionContainer.style.opacity = "1";
+		chkSearchHistory.checked = true ;
+	}
+	if (openInNew === true){
+		chkOpenInNew.checked = true;
+	}
+	if (autoFocus === true){
+		chkAutoFocus.checked = true;
+	}
+	if (reduceMotion === true){
+		chkReduceMotion.checked = true;
+	}
+	if (navLinksBlurEf === true){
+		chkNavLinksBlurEf.checked = true;
+	}
+	if (autoDarkMode === true){
+		chkAutoDarkMode.checked = true;
 	}
 	searchOptBox.style.display = "block";
 	input0.classList.add("foucs");
@@ -163,13 +186,19 @@ function searchPaste(e, obj) {
 			}
 function Input_Blur() {
 	if (autoClrSearchBar === true) {
-		
+		chkAutoClrSearchBar.checked = true;
 	} else {
 		window.getSelection().empty();
 	}
 	if (hitokoto === true) {
+		chkHitokoto.checked = true ;
 		quotebox.style.opacity = "0";
 		quotebox.style.animation = "none";
+	}
+	if (kSearchHistory === true) {
+		chkSearchHistory.checked = true ;
+		searchSuggestionContainer.style.opacity = "0";
+		searchSuggestionContainer.style.display = "none"
 	}
 	keywords.style.display="none"
 	searchOptBox.style.opacity = "0";
@@ -244,6 +273,11 @@ function keydata(keys) {
 	}
 	if (hitokoto === true) {
 		quotebox.style.opacity = "0";
+		chkHitokoto.checked = true ;
+	}
+	if (kSearchHistory === true) {
+		searchSuggestionContainer.style.opacity = "0";
+		chkSearchHistory.checked = true;
 	}
 	keyword.style.height = ((searchSuggestionContainer.s.length + 1) * 30) + "px";
 }
@@ -280,8 +314,7 @@ function keydata(keys) {
                 })
 				const strs = input0.value;
 				const urls = "https://fanyi.baidu.com/#en/zh/" + strs;
-				oUl.innerHTML = "<a href="+urls+" ><div class=\'advSuggest'\><i class=\'iconfont'\>&#xe8f6;</i><span id=\'advSuggestContent'\>"+"翻译:&nbsp;&nbsp;&nbsp;"+strs+"</span><span class=\'keyTip'\>Alt+Enter</span></div></a>"+str;
-                
+				oUl.innerHTML = "<a href="+urls+" onclick=\'chickhistry()'\ ><div class=\'advSuggest'\><i class=\'iconfont'\>&#xe67f;</i><span id=\'advSuggestContent'\>"+"翻译:&nbsp;&nbsp;&nbsp;"+strs+"</span><span class=\'keyTip'\>Alt+Enter</span></div></a>"+str;
             }else {
                 oUl.style.display = 'none';
             }
@@ -503,8 +536,14 @@ title.onclick = event => {
 		searchBar.style.opacity = "0";
 		Input_Blur();
 		if (hitokoto === true) {
+			chkHitokoto.checked = true ;
 			quotebox.style.opacity = "0";
 			quotebox.style.animation = "none";
+		}
+		if (kSearchHistory === true) {
+			chkSearchHistory.checked = true;
+			searchSuggestionContainer.style.opacity = "0";
+			searchSuggestionContainer.style.display = "none";
 		}
 		if (bgPreference == "Live") {
 			if (reduceMotion === false) {
@@ -1123,6 +1162,8 @@ tipBoxBrowser.onmouseleave = () => {
 	}
 }
 
+
+
 window.onclick = () => {
 				if (menuUser.style.opacity === "1") {
 					hideMenu(menuUser);
@@ -1142,10 +1183,19 @@ window.onclick = () => {
 				if (menuSearch.style.opacity === "1") {
 					hideMenu(menuSearch);
 				}
+				if (ddContentSearchBarTabKey.style.opacity = "1"){
+					hideMenu(ddContentSearchBarTabKey);
+				}
 			}
-
+function ddBtnSearchBarTabKey(){
+	if (ddContentSearchBarTabKey.style.opacity === "1") {
+		hideMenu(ddContentSearchBarTabKey);
+	} else {
+		showMenu(ddContentSearchBarTabKey);
+	}
+}
 function btnSettingsClick() {
-				if (menuSettings.style.opacity === "1") {
+				if (menuSettings.style.opacity === "1") {				
 					hideMenu(menuSettings);
 				} else {
 					showMenu(menuSettings);
@@ -1298,7 +1348,15 @@ function setHitokoto() {
 		quotebox.style.display = "block";
 	}
 }
-
+function chkSearchHistorys(){
+	if (chkSearchHistory.checked == true) {
+		kSearchHistory = false;
+		localStorage.setItem("kSearchHistory", "off");
+	} else {
+		kSearchHistory = true;
+		localStorage.setItem("kSearchHistory", "on");
+	}
+}
 function setReduceMotion() {
 	if (chkReduceMotion.checked == true) {
 		reduceMotion = false;
@@ -1608,7 +1666,7 @@ if(snowEf==="on"){
 chkAutoClrSearchBar.checked = autoClrSearchBar;
 chkOpenInNew.checked = openInNew;
 chkAutoFocus.checked = autoFocus;
-
+chkSearchHistory.checked = chkSearchHistory;
 chkHitokoto.checked = hitokoto;
 chkReduceMotion.checked = reduceMotion;
 chkNavLinksBlurEf.checked = navLinksBlurEf;
@@ -1620,6 +1678,9 @@ if (autoFocus === false) {
 }
 if (hitokoto === false) {
 	quotebox.style.display = "none";
+}
+if (kSearchHistory === false) {
+	searchSuggestionContainer.style.display = "none";
 }
 if (navLinksBlurEf === true) {
 	navboxCustom.classList.add("blurEf");
